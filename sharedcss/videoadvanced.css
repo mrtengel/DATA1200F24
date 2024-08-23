@@ -1,0 +1,140 @@
+/**  Z-INDEX! **/
+/** The '.sub-two' class is set with z-index: 2;
+    The '.menu' is set with z-index: 1;
+    Depending on the order of boxes in the HTML, the '.sub-two' may overlay
+    the '.big-box' set to contain a video that overspills the box.
+        This may happen when scaling does not work properly.
+    '.sub-two' may overlay the '.menu' if placed first in HTML;
+        unless the z-index of one/ both altered so '.menu' > '.sub-two'.
+**/
+
+body {
+    background-color: dimgrey;
+}
+
+.container-flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /** These two lines, shorthand: flex-flow: row wrap; **/
+    justify-content: left;
+    /*height: 50vw; */
+}
+
+.big-box {
+    background: rgb(200, 100, 90);
+    padding: 5px;
+    width: 300px;
+    /* height: 150px; */    
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+.sub-one {
+    background: rgb(120, 240, 120);
+    padding: 5px;
+    width: 300px;
+    /* height: 150px; */    
+    margin-top: 10px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.sub-two {
+    background: rgb(140, 140, 250);
+    padding: 5px;
+    width: 300px;
+    /* height: 150px; */
+    margin-top: 10px;
+    line-height: 2em;
+    font-size: 1.2em;
+    text-align: left;
+    z-index: 2;
+}
+
+
+/** TOP MENU — Hamburger **/
+.active {
+    color: violet;
+    text-decoration:line-through;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    list-style-type: none;
+    color: aliceblue;
+    height: 200px;
+    line-height: 1.6rem;
+    margin-top: -10px;
+    margin-left: 0px;
+    padding-left: 0.1rem;
+    z-index: 1; /* adjust to ensure menu on top */
+}
+
+.menu-icon {
+    display: block;
+    background-image: url(../media/menu.svg);
+    background-size: cover;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+}
+
+.hamburger-toggle-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 40px;
+    margin-left: 0px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: left;
+}
+
+#burger-toggle {
+    display: none;
+}
+
+#burger-toggle + .hamburger-toggle-container {
+    margin: 0px;
+    }
+
+.menu > li {
+    display: flex;
+    overflow: hidden;
+    background-color: white;
+}
+
+#burger-toggle ~ .menu li { /** This hides the menu _before_ icon clicked **/
+    height: 0px;
+    margin: 0px;
+}
+
+#burger-toggle:checked ~ .menu li { /** This shows the menu _after_ icon clicked **/
+    height: 1rem;
+    margin: 0px;
+    padding: 0.6rem;
+    padding-right: 4rem;
+    height: 1.4rem;
+}
+
+.nav-container {
+    background-color: var(--topmenucolour);
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    width: auto;
+    height: 40px;
+    display: flex;
+}

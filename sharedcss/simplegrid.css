@@ -1,0 +1,196 @@
+/** Just for funsies, the page will change background colour when you change width **/
+/** SCALING elements **/
+@media (max-width: 760px) {
+    body {
+        background-color: lightskyblue;
+    }
+
+    h1, h2, h3, h4, p, li {
+        margin-left: 2vw;
+        margin-right: 1vw;
+        padding-left: 4px;
+    }
+
+    table {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        border-collapse: collapse;
+        border: solid black 1px;
+    }
+
+    th, td {
+        padding-left: 0.2em;
+        padding-right: 0.1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.75em;
+        border: dashed black 1px;
+    }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 761px) {
+    body {
+        background-color: peachpuff;
+    }
+
+    header, main {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    h1, h2, h3, h4, p, li {
+        margin-left: 2vw;
+        margin-right: 1vw;
+        padding-left: 4px;
+    }
+
+    table {
+        max-width: 700px;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        border-collapse: collapse;
+        border: solid black 1px;
+        }
+
+    th, td {
+        padding-left: 0.6em;
+        padding-right: 0.2em;
+        padding-top: 0.5em;
+        padding-bottom: 0.75em;
+        border: dashed black 1px;
+        }
+}
+
+@media (max-width: 1400px) and (min-width: 1000px) {
+    body {
+        background-color: aliceblue;
+    }
+
+    header, main {
+        padding-left: 10vw;
+        padding-right: 6vw;
+        max-width: 900px;
+    }
+
+    h1, h2, h3, h4, p, li {
+        margin-left: 2vw;
+        margin-right: 1vw;
+        padding-left: 4px;
+    }
+
+    table {
+        max-width: 700px;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        border-collapse: collapse;
+        border: solid black 1px;
+    }
+
+    /** 4fun, this @media only, TableHead (row) has diff. colour :-) **/
+    thead {
+        background-color: rgb(255, 255, 222);
+    }
+
+    th, td {
+        padding-left: 2em;
+        padding-right: 1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.75em;
+        border: dashed black 1px;
+    }
+}
+
+@media (min-width: 1401px) {
+    main {
+        display: grid;
+        grid-template-columns: minmax(30vw, 800px) minmax(30vw, 700px);
+    }
+
+    article {
+        grid-column: 1/2;
+    }
+
+    aside {
+        grid-column: 2/2;
+    }
+
+    body {
+        background-color: aliceblue;
+    }
+
+    header, main {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        }
+
+    h1, h2, h3, h4, p, li {
+        margin-left: 2vw;
+        margin-right: 1vw;
+    }
+
+    table {
+        /* max-width: 700px; Unnecessary as width limited in grid-column */
+        margin-left: 1vw;
+        margin-right: 1vw;
+        border-collapse: collapse;
+        border: solid black 1px;
+    }
+
+    /** 4fun, this @media only, TableHead (row) has diff. colour :-) **/
+    thead {
+        background-color: rgb(255, 255, 222);
+    }
+
+    th, td {
+        padding-left: 2em;
+        padding-right: 1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.75em;
+        border: dashed black 1px;
+    }
+}
+
+/** NON-SCALING elements and properties **/
+body {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: darkolivegreen;
+    background-color: antiquewhite;
+}
+
+h2 {
+    text-decoration-line: underline;
+    text-decoration-color: purple;
+    text-decoration-thickness: 4px;
+}
+
+h1, h2 {
+    font-family: 'SF Pro Rounded', Geneva, Arial, sans-serif;
+    letter-spacing: 0.1em;
+}
+
+h3, h4 {
+    font-weight: 200;
+}
+
+h3, h4, p, li {
+    font-family: 'SF Pro', Geneva, Verdana, Tahoma, sans-serif;
+}
+
+tr {
+    border-bottom: solid black 1px;
+}
+
+th {
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(222, 222, 255);
+}
+  
+tbody tr:nth-child(even) {
+    background-color: rgb(210, 210, 222);
+}

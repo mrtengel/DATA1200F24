@@ -1,0 +1,107 @@
+/* INDEX */
+/*  General
+    Sectioning
+*/
+
+:root {
+    --signprimecolour: rgb(0, 122, 204);
+    --signsecondcolour: rgb(64, 228, 255);
+    --signcontrastcolour: rgb(255, 129, 0);
+    --illustratecolour1: rgb(222, 222, 255);
+    --illustratecolour2: rgb(210, 210, 222);
+
+}
+
+body {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+h1, h2, h3, h4, p, li {
+    padding-left: 10px;
+}
+
+h1 {
+    color: var(--signprimecolour);
+    background-color: antiquewhite;
+}
+
+h2 {
+    text-decoration-line: underline;
+    text-decoration-color: purple;
+    text-decoration-thickness: 4px;
+}
+
+h1, h2 {
+    font-family: 'SF Pro Rounded', Geneva, Arial, sans-serif;
+    letter-spacing: 0.1em;
+}
+
+h3, h4 {
+    font-weight: 200;
+}
+
+h3, h4, p, li {
+    font-family: 'SF Pro', Geneva, Verdana, Tahoma, sans-serif;
+}
+
+/* Media-dependent code START */
+@media screen and (max-width: 1000px) {     /* Mobile */
+    header, main, footer {
+        max-width: 800px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    header, main, footer {
+        max-width: 800px;
+        padding-left: 60px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    header, main, footer {
+        max-width: 1400px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 6fr 3fr 1fr;
+    }
+}
+
+/* Media-dependent code END */
+
+
+table {
+    border-collapse: collapse;
+    border: solid black 1px;
+}
+
+tr {
+    border-bottom: solid black 1px;
+}
+
+th {
+    text-align: left;
+}
+
+th, td {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.75em;
+    border: dashed black 1px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--illustratecolour1);
+  }
+  
+tbody tr:nth-child(even) {
+    background-color: var(--illustratecolour2);
+  }

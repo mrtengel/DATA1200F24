@@ -1,0 +1,72 @@
+/* CSS for the HTML page */
+
+/* Grid Layout for Different Screen Widths */
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "header header header"
+                         "aside main rightmostmargin";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+.rightmostmargin {
+    grid-area: rightmostmargin;
+}
+
+/* Responsive Design for Different Screen Widths */
+@media screen and (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas: "header"
+                             "main"
+                             "aside"
+                             "rightmostmargin";
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    body {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "header header"
+                             "aside main"
+                             "rightmostmargin rightmostmargin";
+    }
+}
+
+/* Styling for Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}

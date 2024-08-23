@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed video HTML5</title>
+</head>
+<body>
+    <h1>Elementary about videos</h1>
+    <h2>Below: "Standard" code</h2>
+    <video width="600" height="*" controls>
+        <source src="https://film.oslomet.no/10820436/11069884/15e1a94511663749eab749447a2838c7/video_1080p/lo151-1b-boolske-funksjoner-2-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    <h2>Below: "muted" code added</h2>
+      <video width="600" height="*" controls muted>
+        <source src="https://film.oslomet.no/10820436/11069884/15e1a94511663749eab749447a2838c7/video_1080p/lo151-1b-boolske-funksjoner-2-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+      <pre>
+        &lt;video width="600" height="*" controls muted&gt;
+        &lt;source src="folder-or-url/video-name.mp4" type="video/mp4"&gt;
+          Your browser does not support the video tag.
+          &lt;/video&gt;
+      </pre>
+      <h2>Below: YouTube in 'iFrame'</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/JMOOG7rWTPg?si=hMYF5A5aBVPo3Vo3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

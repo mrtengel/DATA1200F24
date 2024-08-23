@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+h1, h2, h3, h4, p, li {
+    margin-left: 10%;
+    margin-right: 20%;
+    padding-left: 10px;
+}
+
+h1 {
+    color: darkolivegreen;
+    background-color: antiquewhite;
+}
+
+h2 {
+    text-decoration-line: underline;
+    text-decoration-color: purple;
+    text-decoration-thickness: 4px;
+}
+
+h1, h2 {
+    font-family: 'SF Pro Rounded', Geneva, Arial, sans-serif;
+    letter-spacing: 0.1em;
+}
+
+h3, h4 {
+    font-weight: 200;
+}
+
+h3, h4, p, li {
+    font-family: 'SF Pro', Geneva, Verdana, Tahoma, sans-serif;
+}
+
+table {
+    margin-left: 12%;
+    margin-right: 25%;
+    border-collapse: collapse;
+    border: solid black 1px;
+}
+
+tr {
+    border-bottom: solid black 1px;
+}
+
+th {
+    text-align: left;
+}
+
+th, td {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.75em;
+    border: dashed black 1px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(222, 222, 255);
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: rgb(210, 210, 222);
+  }

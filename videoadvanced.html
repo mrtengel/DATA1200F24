@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sharedcss/videoadvanced.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <input id="burger-toggle" type="checkbox">
+                <label class="hamburger-toggle-container" for="burger-toggle">
+                    <div class="menu-icon"></div>
+                </label>
+
+                <ul class="menu">
+                    <li><a href="complete.html">Simple-page</a></li>
+                    <li class="active">Grid-example</li>
+                    <li><a href="completeautogrid.html">Grid auto-organise</a></li>
+                    <li>Menu four</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container-flexbox">
+        <!-- "sub-two" has z-index set to 2, will overlap others -->
+        <section class="sub-two"></section>
+
+        
+
+        <section class="big-box">
+            <video width="600" height="*" controls>
+                <source src="https://film.oslomet.no/10820436/11069884/15e1a94511663749eab749447a2838c7/video_1080p/lo151-1b-boolske-funksjoner-2-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+        </video>
+        </section>
+
+        <section class="sub-one">
+            <picture>
+                <img srcset="media/saxion-front.webp">
+            </picture>
+        </section>
+
+    </main>
+</body>
+</html>

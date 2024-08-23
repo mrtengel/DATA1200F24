@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin-left: 20px;
+            margin-right: 20px;
+            background-color: lightblue;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+            border-top: 1px solid #ddd;
+        }
+        @media screen and (max-width: 600px) {
+            footer {
+                flex-direction: column;
+            }
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            th, td {
+                border: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Main Heading</h1>
+        <h2>Sub Heading</h2>
+        <h3>Sub Sub Heading</h3>
+
+        <p>"Microsoft has delayed the public beta test for its anticipated recall feature for data scraping, according to a company blog post. The feature, which was originally set to debut in June, will now be rolling out "over the next several months," with no specific date attached."</p>
+        
+        <table>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+                <th>Header 5</th>
+            </tr>
+            <tr>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+            </tr>
+            <!-- add four more similar rows -->
+        </table>
+    </article>
+    <footer>
+        <div>
+            <p>Grenseveien 91, 0663 Oslo, Norway</p>
+        </div>
+        <div>
+            <p>Daglig leder</p>
+            <p>Christian Randulf Bull</p>
+            <p>915 75 899</p>
+            <p>christian@digimaker.no</p>
+        </div>
+    </footer>
+</body>
+</html>

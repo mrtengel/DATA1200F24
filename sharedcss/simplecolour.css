@@ -1,0 +1,32 @@
+body {margin: 0;}
+
+h1, h2, h3, h4, p, li {
+    margin-left: 10%;
+    margin-right: 20%;
+    padding-left: 10px;
+}
+
+h1 {
+    color: darkolivegreen;
+    background-color: antiquewhite;
+}
+
+h2 {
+    text-decoration-line: underline;
+    text-decoration-color: purple;
+    text-decoration-thickness: 4px;
+}
+
+h1, h2 {
+    font-family: 'SF Pro Rounded', Geneva, Arial, sans-serif;
+    letter-spacing: 0.1em;
+}
+
+h3, h4 {
+    font-weight: 200;
+}
+
+h3, h4, p, li {
+    font-family: 'SF Pro', Geneva, Verdana, Tahoma, sans-serif;
+}
+
