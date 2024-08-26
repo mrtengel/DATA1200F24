@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inline CSS</title>
+    <style>
+        body {margin-right: 20%;}
+        p {font-family: Arial, Helvetica, sans-serif;}
+        a {text-decoration: underline dashed;}
+        code {background-color: blanchedalmond;}
+    </style>
+</head>
+<body>
+    <h1>CSS can change everything!</h1>
+    <p>Web-pages may change appearance<br /> and lay-out with CSS.</p>
+    <p>Hello <a href="https://www.un.org">world!</a></p>
+    <p><strong>These elements are "styled" in CSS for this page:</strong></p>
+    <ul>
+        <li>body – margin-right; 20%, could have been in 'px', 'em'</li>
+        <li>p – different font-family</li>
+        <li>code – background-color</li>
+    </ul>
+    <h2>External style-sheets</h2>
+    <p>This document has the <code>&lt;style&gt;</code> element inside the <code>&lt;head&gt;</code>. You should always have the CSS exclusively in a separate file (in a sub-folder). This is called an external stylesheet. The code for this is as follows, asuming the sub-folder is "style": <br />
+        <code>&lt;link type="text/css" rel="stylesheet" href="style/main.css"&gt;</code>
+    </p>
+</body>
+</html>
