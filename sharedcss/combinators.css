@@ -1,0 +1,27 @@
+/* '*' vs 'body' vs 'html' */
+body {margin-left: 20;}
+
+/* Simple combinator, sectioning element + text element */
+footer {width: 80%;}
+p {font-weight: 700;}
+
+footer p {
+    font-weight: 100;
+}
+
+/* Descendant combintator = whitespace */
+main ol {                               /* All ordered lists inside main */
+    color: rgb(214, 25, 214);
+}
+
+/* Child (direct childeren only) combinator */
+main > ul {                             /* Only unordered lists directly under main */
+    color: rgb(6, 97, 30);
+}
+
+/* Next-sibling combinator: matches second element only if it immediately follows the first element */
+h1 + p {
+    font-size: 1.2em;
+    font-family: 'Gill Sans', Calibri, sans-serif;
+    color: darkslategrey;
+}

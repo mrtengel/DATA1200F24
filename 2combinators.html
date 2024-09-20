@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="sharedcss/combinators.css">
+    <title>Combinators</title>
+</head>
+<body>
+    <header>
+        <h1>CSS combinators</h1>
+        <p>First paragraph after H1</p>
+        <p>Second paragraph after H1</p>
+    </header>
+
+    <main>
+        <ul>
+            <li>Unordered list in main</li>
+        </ul>
+        <p>Paragraph inside 'main'</p>
+        <p>The paragraphs nests several elements to showcase the <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors">*</a> in the CSS code.</code></p>
+        <ol>
+            <li>Ordered list in main</li>
+            <ol>
+                <li>Additional item</li>
+                <ol>
+                    <li>Whitespace is a syntax element in CSS</li>
+                    <li>The right angle-bracket is different</li>
+                </ol>
+            </ol>
+        </ol>
+        
+        <ul>
+            <li>Unordered list in div, in main</li>
+             <ul>
+                <li>Additional item</li>
+                <ul>
+                    <li>Right angle-bracket: > </li>
+                    <li>Children only, not grandchildren</li>
+                </ul>
+            </ul>
+        </ul>
+        <div>
+            <ul>
+                <li>Unordered list in div, in main</li>
+                 <ul>
+                    <li>Additional item</li>
+                    <ul>
+                        <li>Right angle-bracket: > </li>
+                        <li>Children only, not grandchildren</li>
+                    </ul>
+                </ul>
+            </ul>
+        </div>
+    </main>
+
+    <aside>
+
+    </aside>
+
+    <footer>
+        <p>Paragraph inside 'footer'</p>
+    </footer>
+</body>
+</html>
