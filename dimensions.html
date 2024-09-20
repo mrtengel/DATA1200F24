@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+:root {
+    --primecolour: rgb(0, 122, 204);
+    --primecolouralt: rgb(64, 228, 255);
+    --contrastcolour: rgb(255, 129, 0);
+    --background1: rgb(222, 222, 255);
+    --background2: rgb(22, 255, 222);
+}
+
+body {
+    margin: 10px;
+    background-color: var(--background1);
+    font-family: 'Helvetica neue';
+    font-size: 0.9em;           
+}
+
+h1 {font-size: 2.4rem;}         
+h2 {font-size: 1.6em;}          
+h3 {font-size: 1.4em;}         
+p {font-size: 1em;}             
+
+header, main, footer {
+    padding-left: 1vw;         /* Scales with browser */
+    border-width: 1px;
+    border-color: black;
+    border-style: groove;
+}
+
+main {background-color: var(--background2);}
+header, footer {background-color: aliceblue;}
+
+
+    </style>
+</head>
+<body>
+    <header>
+<h1>H1 in Header</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>H2 in Article</h2>
+            <p>Paragraph directly under H2</p>
+            <p>10. september var det innbyggertorg på både campus Kjeller og Pilestredet, der studenter og ansatte var invitert til å snakke med ledelsen og gi sine innspill om både muligheter og begrensninger ved de tre alternative campusprofilene.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Paragraph in Footer</p>
+    </footer>
+    
+</body>
+</html>
