@@ -1,0 +1,7 @@
+.cloud {
+    background-image: url(../media/clouds1440.webp);
+    height: 400px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

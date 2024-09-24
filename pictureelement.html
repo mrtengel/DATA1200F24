@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sharedcss/simple.css">
+    <link rel="stylesheet" href="sharedcss/cloudimagebox.css">
+</head>
+<body>
+    <header>
+        <h1>Two ways to create dynamic images</h1>
+    </header>
+    <main>
+        <h2>Cumulus cloud</h2>
+        <h3>The picture element</h3>
+        <picture class="nopadding objectfit-cover">
+            <source srcset="media/clouds1440.webp" media="(min-width: 904px)" width="100%">
+            <source srcset="media/clouds900.webp" media="(min-width: 704px)" width="100%">
+            <source srcset="media/clouds700.webp 544w" width="100%">
+            <source srcset="media/clouds540.webp 304w" width="100%">
+            <img src="media/clouds300.webp" width="300px" alt="Cumulus clouds are cotton-like and fluffy, the sun may shine through">
+        </picture>
+        <p>Cumulus clouds are clouds that have flat bases and are often described as puffy, cotton-like, or fluffy in appearance. Their name derives from the Latin cumulus, meaning "heap" or "pile".[1] Cumulus clouds are low-level clouds, generally less than 2,000 m (6,600 ft) in altitude unless they are the more vertical cumulus congestus form. Cumulus clouds may appear by themselves, in lines, or in clusters.</p>
+
+        <p>Cumulus clouds are often precursors of other types of clouds, such as cumulonimbus, when influenced by weather factors such as instability, humidity, and temperature gradient. Normally, cumulus clouds produce little or no precipitation, but they can grow into the precipitation-bearing cumulus congestus or cumulonimbus clouds. Cumulus clouds can be formed from water vapour, supercooled water droplets, or ice crystals, depending upon the ambient temperature. They come in many distinct subforms and generally cool the earth by reflecting the incoming solar radiation.</p>
+            
+        <p>Cumulus clouds are part of the larger category of free-convective cumuliform clouds, which include cumulonimbus clouds. The latter genus-type is sometimes categorized separately as cumulonimbiform due to its more complex structure that often includes a cirriform or anvil top.[2] There are also cumuliform clouds of limited convection that comprise stratocumulus (low-étage), altocumulus (middle-étage) and cirrocumulus (high-étage).[3] These last three genus-types are sometimes classified separately as stratocumuliform.[2]</p>
+        <p><cite>"Cumulus cloud" (accessed 24.09.2024) Wikipedia <a href="https://en.wikipedia.org/wiki/Cumulus_cloud">https://en.wikipedia.org/wiki/Cumulus_cloud</a></cite></p>
+
+        <h3>CSS, box, and object-fit: cover</h3>
+        <p>The CSS-variant scales seamlessly, but will always download a large image and cannot have an "alt"-text.</p>
+        <div class="cloud">
+        </div>
+    </main>
+    
+</body>
+</html>

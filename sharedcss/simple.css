@@ -17,3 +17,8 @@ h3, h4 {
 h3, h4, p, li {
     font-family: 'SF Pro', Geneva, Verdana, Tahoma, sans-serif;
 }
+
+.nopadding {
+    padding: 0;
+    margin: 0;
+}
