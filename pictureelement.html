@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Picture element vs CSS images</title>
     <link rel="stylesheet" href="sharedcss/simple.css">
     <link rel="stylesheet" href="sharedcss/cloudimagebox.css">
 </head>
@@ -15,11 +15,14 @@
         <h2>Cumulus cloud</h2>
         <h3>The picture element</h3>
         <picture class="nopadding objectfit-cover">
-            <source srcset="media/clouds1440.webp" media="(min-width: 904px)" width="100%">
-            <source srcset="media/clouds900.webp" media="(min-width: 704px)" width="100%">
+            <source srcset="media/clouds1440.webp" 
+                    media="(min-width: 904px)" width="100%">
+            <source srcset="media/clouds900.webp" 
+                    media="(min-width: 704px)" width="100%">
             <source srcset="media/clouds700.webp 544w" width="100%">
             <source srcset="media/clouds540.webp 304w" width="100%">
-            <img src="media/clouds300.webp" width="300px" alt="Cumulus clouds are cotton-like and fluffy, the sun may shine through">
+            <img src="media/clouds300.webp" width="300px" 
+            alt="Cumulus clouds are cotton-like and fluffy, the sun may shine through">
         </picture>
         <p>Cumulus clouds are clouds that have flat bases and are often described as puffy, cotton-like, or fluffy in appearance. Their name derives from the Latin cumulus, meaning "heap" or "pile".[1] Cumulus clouds are low-level clouds, generally less than 2,000 m (6,600 ft) in altitude unless they are the more vertical cumulus congestus form. Cumulus clouds may appear by themselves, in lines, or in clusters.</p>
 
