@@ -80,7 +80,7 @@ body {
     margin-top: -10px;
     margin-left: 0px;
     padding-left: 0.1rem;
-    z-index: 1; /* adjust to ensure menu on top */
+    z-index: 4; /* adjust to ensure menu on top */
 }
 
 .menu-icon {
