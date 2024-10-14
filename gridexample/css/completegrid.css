@@ -209,8 +209,6 @@ h1 {
         width: 40px;
         margin-left: 0px;
         cursor: pointer;
-        justify-content: center;
-        align-items: left;
     }
 
     #burger-toggle {
