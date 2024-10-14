@@ -1,0 +1,55 @@
+/** FLEX — the important part **/
+/* flex, main */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section {
+    width: max(600px);
+    margin: 1em;
+    padding: 1em;
+    background-color: antiquewhite;
+}
+
+/* flex, menu */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+menu {
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    menu {
+        flex-direction: column;
+    }
+}
+
+/** purely visual, not flex-related **/
+body {
+    margin: 0;
+}
+
+header, footer {
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-bottom: 1.4em;
+    background-color: orangered;
+}
+
+main {counter-reset: h2counter;}
+
+main h2::before {
+    counter-increment: h2counter;
+    content: counter(h2counter) " ";
+}
+
+nav li {
+    list-style-type: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-right: 1.6vw;
+}

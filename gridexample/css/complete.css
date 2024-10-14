@@ -1,0 +1,230 @@
+:root {
+    --topmenucolour:rgb(128, 0, 32);
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2.1em;
+    font-weight: lighter;
+}
+
+.ingress {
+    font-weight: bolder;
+    color: #363636;
+}
+
+@media (max-width: 700px) {
+main, footer {
+    margin-left: 1rem;
+    margin-top: 0px;
+}
+
+article, footer {
+    width: 94vw;
+}
+
+aside {
+    box-sizing: border-box;
+    width: 94vw;
+    background-color: blanchedalmond;
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.4rem;
+}
+
+.footerleft, .footermidle, .footerright {
+    padding-top: 0.6rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 0.8rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+aside > h2 {
+    color: darkslategray;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+aside > p {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: larger;
+}
+
+.secondary-box {
+    background-image: url(https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxlarge/4/4/8/0/10844-16-eng-GB/makerspace_2_foto_Kristin_Mehlum_cropped.jpg);
+    background-size: cover;
+    width: 94vw;
+    height: 60vw;
+}
+}
+
+@media (min-width: 701px) {
+    main, footer {
+        margin-left: 4rem;
+        margin-top: 0px;
+    }
+
+    article, footer {
+        width: 80vw;
+        max-width: 800px;
+        margin-right: 4em;
+    }
+
+    aside {
+        box-sizing: border-box;
+        width: 80vw;
+        max-width: 800px;
+        margin-right: 4em;
+        background-color: blanchedalmond;
+        padding-top: 0.6rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 0.8rem;
+    }
+
+    .footerleft, .footermidle, .footerright {
+        padding-top: 0.6rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 0.8rem;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+    }
+
+    aside > h2 {
+        color: darkslategray;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    aside > p {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: oblique;
+        font-size: larger;
+    }
+
+    .secondary-box {
+        background-image: url(https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxlarge/4/4/8/0/10844-16-eng-GB/makerspace_2_foto_Kristin_Mehlum_cropped.jpg);
+        background-size: cover;
+        width: 80vw;
+        max-width: 800px;
+        height: 53vw;
+        max-height: 530px;
+    }
+}
+
+
+/** TOP MENU — Hamburger **/
+.active {
+    color: aliceblue;
+    text-decoration:line-through;
+}
+
+.menu a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .menu {
+        display: flex;
+        position: sticky;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        list-style-type: none;
+        color: aliceblue;
+        height: 200px;
+        line-height: 1.6rem;
+        margin-top: -10px;
+        margin-left: 0px;
+        padding-left: 0.1rem;
+    }
+
+    .menu-icon {
+        display: block;
+        background-image: url(../images/menu.svg);
+        background-size: cover;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+    }
+
+    .hamburger-toggle-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 40px;
+        margin-left: 0px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: left;
+    }
+
+    #burger-toggle {
+        display: none;
+    }
+
+    #burger-toggle + .hamburger-toggle-container {
+        margin: 0px;
+      }
+
+    .menu > li {
+        display: flex;
+        overflow: hidden;
+        background-color: var(--topmenucolour);
+    }
+
+    #burger-toggle ~ .menu li { /** This hides the menu _before_ icon clicked **/
+        height: 0px;
+        margin: 0px;
+    }
+
+    #burger-toggle:checked ~ .menu li { /** This shows the menu _after_ icon clicked **/
+        height: 1rem;
+        margin: 0px;
+        padding: 0.6rem;
+        padding-right: 4rem;
+        height: 1.4rem;
+    }
+
+    .nav-container {
+        background-color: var(--topmenucolour);
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        width: auto;
+        height: 40px;
+        display: flex;
+    }
+}
+
+@media (min-width: 701px) {
+    .menu {
+        background-color: var(--topmenucolour);
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        list-style-type: none;
+        color: aliceblue;
+        margin-top: 0px;
+    }
+
+    .menu > li {
+        padding-right: 4rem;
+    }
+
+    #burger-toggle { /* Wide screen: Hide the burger-image! */
+        display: none;
+      }
+}

@@ -1,0 +1,150 @@
+:root {
+    --topmenucolour:rgb(128, 0, 32);
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2.1em;
+    font-weight: lighter;
+}
+
+.ingress {
+    font-weight: bolder;
+    color: #363636;
+}
+
+.pageheading {
+    margin-left: 2rem;
+    width: minmax(auto, 634px);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 212px);
+  }
+
+@media (max-width: 847px) {
+    .wrapper {
+        justify-content: center;
+    }
+}
+
+.minicontent {
+    margin: 2px;
+    padding: 2px;
+    border-radius: 4%;
+    border-style: solid;
+    border-width: 1px;
+    background-color: antiquewhite;
+}
+
+/** TOP MENU — Hamburger **/
+.active {
+    color: aliceblue;
+    text-decoration:line-through;
+}
+
+.menu a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .menu {
+        display: flex;
+        position: sticky;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        list-style-type: none;
+        color: aliceblue;
+        height: 200px;
+        line-height: 1.6rem;
+        margin-top: -10px;
+        margin-left: 0px;
+        padding-left: 0.1rem;
+    }
+
+    .menu-icon {
+        display: block;
+        background-image: url(../images/menu.svg);
+        background-size: cover;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+    }
+
+    .hamburger-toggle-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 40px;
+        margin-left: 0px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: left;
+    }
+
+    #burger-toggle {
+        display: none;
+    }
+
+    #burger-toggle + .hamburger-toggle-container {
+        margin: 0px;
+      }
+
+    .menu > li {
+        display: flex;
+        overflow: hidden;
+        background-color: var(--topmenucolour);
+    }
+
+    #burger-toggle ~ .menu li { /** This hides the menu _before_ icon clicked **/
+        height: 0px;
+        margin: 0px;
+    }
+
+    #burger-toggle:checked ~ .menu li { /** This shows the menu _after_ icon clicked **/
+        height: 1rem;
+        margin: 0px;
+        padding: 0.6rem;
+        padding-right: 4rem;
+        height: 1.4rem;
+    }
+
+    .nav-container {
+        background-color: var(--topmenucolour);
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        width: auto;
+        height: 40px;
+        display: flex;
+    }
+}
+
+@media (min-width: 701px) {
+    .menu {
+        background-color: var(--topmenucolour);
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        list-style-type: none;
+        color: aliceblue;
+        margin-top: 0px;
+    }
+
+    .menu > li {
+        padding-right: 4rem;
+    }
+
+    #burger-toggle { /* Wide screen: Hide the burger-image! */
+        display: none;
+      }
+}
