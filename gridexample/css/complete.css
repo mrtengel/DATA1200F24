@@ -58,7 +58,7 @@ aside > p {
     font-size: larger;
 }
 
-.secondary-box {
+.image-box {
     background-image: url(https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxlarge/4/4/8/0/10844-16-eng-GB/makerspace_2_foto_Kristin_Mehlum_cropped.jpg);
     background-size: cover;
     width: 94vw;
@@ -111,11 +111,13 @@ aside > p {
         font-size: larger;
     }
 
-    .secondary-box {
+    .image-box {
         background-image: url(https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxlarge/4/4/8/0/10844-16-eng-GB/makerspace_2_foto_Kristin_Mehlum_cropped.jpg);
         background-size: cover;
         width: 80vw;
+        max-width: 800px;
         height: 53vw;
+        max-height: 450px;
     }
 }
 
