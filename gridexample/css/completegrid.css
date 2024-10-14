@@ -2,6 +2,7 @@
 /** https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout **/
 /** Hope that is more helpfull than confusing **/
 
+/** Please note: The GENERAL style is at the _bottom_ of this document **/
 
 /****/
 
@@ -92,7 +93,7 @@
 
     .wrapper {
         display: grid;
-        grid-template-columns: 30vw auto minmax(300px, 30vw) 40px;
+        grid-template-columns: 30vw auto minmax(300px, 30vw) 1rem;
         grid-auto-rows: minmax(100px, auto);
     }
 
@@ -148,7 +149,6 @@
         grid-row: 4;
     }
 }
-
 
 /** The code below is the parts shared with "complete.css" **/
 :root {
