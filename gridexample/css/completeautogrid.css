@@ -7,6 +7,11 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Simple way to create three columns: Use "Fragments" */
+}
+
 h1 {
     font-size: 2.1em;
     font-weight: lighter;
@@ -26,6 +31,11 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fill, 212px);
   }
+
+.footerleft, .footermiddle, .footerright {
+    padding-left: 1em;
+    padding-right: 1em;
+}
 
 @media (max-width: 847px) {
     .wrapper {
