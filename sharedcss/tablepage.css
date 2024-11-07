@@ -9,7 +9,7 @@
     --signcontrastcolour: rgb(255, 129, 0);
     --illustratecolour1: rgb(222, 222, 255);
     --illustratecolour2: rgb(210, 210, 222);
-
+    font-size: 1em; /* Changes font-size, no paddings */
 }
 
 body {
@@ -46,7 +46,7 @@ h3, h4, p, li {
 }
 
 /* Media-dependent code START */
-@media screen and (max-width: 1000px) {     /* Mobile */
+@media (max-width: 1000px) {     /* Mobile */
     header, main, footer {
         max-width: 800px;
         padding-left: 10px;
@@ -54,14 +54,14 @@ h3, h4, p, li {
     }
 }
 
-@media screen and (min-width: 1001px) and (max-width: 1200px) {
+@media (min-width: 1001px) and (max-width: 1200px) {
     header, main, footer {
         max-width: 800px;
         padding-left: 60px;
     }
 }
 
-@media screen and (min-width: 1201px) {
+@media (min-width: 1201px) {
     header, main, footer {
         max-width: 1400px;
         padding-left: 60px;
